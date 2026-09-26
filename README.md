@@ -38,22 +38,7 @@ component model. The [code and compact results](results/linear_regression_compar
 are retained as an exploratory comparison; that row-level KFold experiment is
 not directly comparable with the strict nested headline result above.
 
-## What changed from the original project
 
-- Reusable code lives in `src/optiver/`; experiment entry points live in
-  `scripts/`.
-- Every split preserves complete `time_id` groups.
-- Target-derived features are fitted only inside the applicable training fold.
-- The final ensemble uses a disjoint calibration subset inside each outer
-  training fold. Outer-fold labels never fit that fold's component models or
-  blend weights.
-- The old post-hoc OOF blend is retained only as an explicitly labelled
-  exploratory analysis.
-- LightGBM and PyTorch calibration jobs run in separate processes to avoid a
-  macOS OpenMP runtime conflict.
-- Runs write fold maps, effective parameters, file hashes, status records and
-  reproducible result tables.
-- The test suite currently contains 64 passing tests.
 
 ## Repository map
 
