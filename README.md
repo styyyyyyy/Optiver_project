@@ -2,6 +2,8 @@
 
 [中文说明](README.zh-CN.md) · [Experiment results](docs/experiment_results.md) · [Reproduction guide](docs/reproducing.md) · [Architecture](docs/architecture.md)
 
+[Download the research report bundle (PDF, LaTeX, and figure)](output/optiver_research_report_bundle.zip)
+
 This repository studies short-horizon realized-volatility prediction on the
 [Optiver Kaggle dataset](https://www.kaggle.com/competitions/optiver-realized-volatility-prediction).
 The current codebase replaces the original notebook-style scripts with a
