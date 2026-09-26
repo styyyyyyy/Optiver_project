@@ -12,6 +12,7 @@
 | Strict nested LightGBM + MLP | **0.217123** | [0.212922, 0.222404] |
 | LightGBM | 0.218334 | [0.213820, 0.224134] |
 | MLP | 0.227346 | [0.223732, 0.232059] |
+| Ridge base model（92 features） | 0.235879 | [0.232965, 0.238987] |
 
 Strict nested ensemble 相对 LightGBM 改善约 `0.555%`，paired difference 为
 `-0.001211`，conditional paired 95% CI 为
@@ -20,10 +21,9 @@ Strict nested ensemble 相对 LightGBM 改善约 `0.555%`，paired difference �
 这个结果仍是同一 development dataset 上的 grouped-CV estimate，不是独立测试集
 成绩。模型、特征与 ensemble 路径均受到该数据集的研究反馈。
 
-原始 Phase 2C 还包含一个 Ridge 线性回归 stacking 对比，历史 OOF RMSPE 为
-`0.236216`，没有优于两个基础模型。对应的[代码与精简结果](results/linear_regression_comparison/)
-已保留；由于它采用随机行级 KFold，只作为探索性负结果，不与上面的 strict nested
-结果直接比较。
+作为透明的线性基准，Ridge 直接使用 92 个经过审计的 engineered features 预测
+target，而不是 stacking。它在相同 grouped OOF 协议下的 RMSPE 为 `0.235879`。
+对应的[代码与精简结果](results/ridge_baseline/)已经单独保存。
 
 ## 从哪里开始
 

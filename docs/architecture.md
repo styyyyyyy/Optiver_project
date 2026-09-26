@@ -46,6 +46,7 @@ to `results/` for review.
 | `run_nested_calibration_fold.py` | Train one fold's LightGBM calibration component and assemble the calibration bundle |
 | `evaluate_nested_blend.py` | Validate five calibration bundles and score the strict nested blend |
 | `evaluate_blend.py` | Exploratory post-hoc OOF blend only |
+| `evaluate_ridge_baseline.py` | Direct Ridge baseline on the 92 audited engineered features |
 | `summarize_runs.py` | Align OOF runs and calculate paired comparisons |
 | `verify_feature_cache.py` | Check the local feature cache against the recorded manifest |
 | `plot_results.py` | Rebuild the committed model/fold comparison figure |

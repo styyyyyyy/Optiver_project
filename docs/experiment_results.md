@@ -10,6 +10,7 @@ LightGBM model and an MLP:
 | Strict nested blend | **0.2171231602** | [0.2129224897, 0.2224036512] |
 | LightGBM | 0.2183344211 | [0.2138195436, 0.2241339619] |
 | MLP | 0.2273455659 | [0.2237316094, 0.2320588293] |
+| Ridge base model (92 engineered features) | 0.2358790999 | [0.2329645123, 0.2389871552] |
 
 Against LightGBM, the paired RMSPE difference is
 `-0.0012112609`, with conditional grouped-bootstrap 95% interval
@@ -37,6 +38,14 @@ prediction or weight fitting for that fold. The five LightGBM weights were
 approximately `0.726`, `0.608`, `0.712`, `0.616` and `0.844`.
 
 ## Component definitions
+
+### Ridge base model
+
+- direct prediction from the 92 audited `full_clean` engineered features
+- no LightGBM or MLP predictions used as inputs
+- fold-local median imputation and standardization
+- Ridge `alpha=1.0` with RMSPE-aligned `1 / target^2` sample weights
+- five-fold OOF grouped by `time_id`
 
 ### LightGBM
 

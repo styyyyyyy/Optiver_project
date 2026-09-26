@@ -1,0 +1,2 @@
+model,n_features,alpha,pooled_oof_rmspe,ci_lower,ci_upper,confidence,bootstrap_resamples,mean_fold_rmspe,std_fold_rmspe
+ridge_full_clean_92,92,1.0,0.23587909985707264,0.2329645122521011,0.23898715523673472,0.95,5000,0.2358477955572517,0.0038385232417776963

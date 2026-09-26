@@ -1,0 +1,18 @@
+{
+  "model": "ridge_full_clean_92",
+  "n_features": 92,
+  "alpha": 1.0,
+  "pooled_oof_rmspe": 0.23587909985707264,
+  "ci_lower": 0.2329645122521011,
+  "ci_upper": 0.23898715523673472,
+  "confidence": 0.95,
+  "bootstrap_resamples": 5000,
+  "mean_fold_rmspe": 0.2358477955572517,
+  "std_fold_rmspe": 0.0038385232417776963,
+  "feature_set": "full_clean",
+  "split_strategy": "group_kfold_by_time_id",
+  "training_objective": "RMSPE-aligned weighted Ridge",
+  "sample_weight": "normalized 1 / target^2",
+  "prediction_clipping": "non-negative",
+  "seed": 2021
+}

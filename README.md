@@ -21,6 +21,7 @@ All scores below use five-fold grouped CV with `time_id` as the grouping unit.
 | Strict nested LightGBM + MLP | **0.217123** | [0.212922, 0.222404] |
 | LightGBM | 0.218334 | [0.213820, 0.224134] |
 | MLP | 0.227346 | [0.223732, 0.232059] |
+| Ridge base model (92 features) | 0.235879 | [0.232965, 0.238987] |
 
 The strict ensemble improves on LightGBM by `-0.001211` RMSPE (about `0.555%`).
 Its conditional paired 95% interval is `[-0.001941, -0.000558]`.
@@ -32,11 +33,10 @@ feature choices were informed by the same development dataset. See
 [the limitations](docs/experiment_results.md#limitations) before quoting the
 score.
 
-The original Phase 2C experiment also tested a Ridge linear-regression stack.
-It scored `0.236216` on its historical OOF inputs and did not improve either
-component model. The [code and compact results](results/linear_regression_comparison/)
-are retained as an exploratory comparison; that row-level KFold experiment is
-not directly comparable with the strict nested headline result above.
+As a transparent linear benchmark, Ridge uses the 92 audited engineered
+features directly to predict the target. Under the same grouped OOF protocol,
+it scores `0.235879`. The [code and compact results](results/ridge_baseline/)
+make clear that this is a base model, not a stacking model.
 
 
 

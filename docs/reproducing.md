@@ -30,7 +30,21 @@ groups. Its SHA-256 is recorded in the manifest.
 python -m unittest discover -s tests
 ```
 
-## 4. Outer LightGBM OOF
+## 4. Ridge base model
+
+```bash
+python scripts/evaluate_ridge_baseline.py \
+  --features-path data/processed/features_phase2.parquet \
+  --output-dir artifacts/ridge_full_clean_group5_seed2021 \
+  --bootstrap-resamples 5000 \
+  --seed 2021
+```
+
+This is a direct linear model from the 92 `full_clean` engineered features to
+the target. It is not a stacking model. Expected pooled OOF RMSPE:
+`0.23587909985707264`.
+
+## 5. Outer LightGBM OOF
 
 ```bash
 python scripts/run_experiments.py lgbm \
@@ -46,7 +60,7 @@ python scripts/run_experiments.py lgbm \
   --seed 2021
 ```
 
-## 5. Outer MLP OOF
+## 6. Outer MLP OOF
 
 ```bash
 python scripts/run_mlp_experiment.py \
@@ -64,7 +78,7 @@ python scripts/run_mlp_experiment.py \
 Do not run LightGBM and PyTorch numerical work in the same Python interpreter
 on macOS. The provided scripts are intentionally separate processes.
 
-## 6. Fold-local calibration bundles
+## 7. Fold-local calibration bundles
 
 Run the following for each `FOLD` in `0 1 2 3 4`:
 
@@ -94,7 +108,7 @@ python scripts/run_nested_calibration_fold.py \
 Each output directory must be new or empty. This prevents accidental mixing of
 artifacts from different runs.
 
-## 7. Strict nested evaluation
+## 8. Strict nested evaluation
 
 ```bash
 python scripts/evaluate_nested_blend.py \
@@ -112,7 +126,7 @@ python scripts/evaluate_nested_blend.py \
 
 Expected pooled OOF RMSPE: `0.2171231602226673`.
 
-## 8. Rebuild the public figure
+## 9. Rebuild the public figure
 
 ```bash
 python scripts/plot_results.py
