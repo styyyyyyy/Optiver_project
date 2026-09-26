@@ -30,7 +30,7 @@ to `results/` for review.
 | `feature_sets.py` | Named, auditable feature groups and cumulative feature sets |
 | `validation.py` | Group-preserving folds, balanced splits and cross-fitted stock statistics |
 | `clustering.py` | Training-scope feature clusters and diagnostic target clusters |
-| `training.py` | Leakage-aware LightGBM CV, inner selection and model artifacts |
+| `training.py` | Grouped-CV LightGBM training, inner selection and model artifacts |
 | `mlp.py` | MLP preprocessing, stock embeddings, nested epoch selection and CV |
 | `baselines.py` | Raw-RV, stock-calibrated and constant benchmarks |
 | `blending.py` | Descriptive post-hoc OOF blending; never the strict headline |

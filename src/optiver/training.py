@@ -1,4 +1,4 @@
-"""Leakage-aware LightGBM cross-validation primitives.
+"""LightGBM cross-validation primitives with grouped validation.
 
 The outer validation fold is never used to choose the number of boosting
 iterations.  Each outer fold contains a group-preserving inner holdout used for

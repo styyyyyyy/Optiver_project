@@ -1,4 +1,4 @@
-# Leakage-aware Optiver volatility research
+# Optiver realized-volatility research
 
 [中文说明](README.zh-CN.md) · [Experiment results](docs/experiment_results.md) · [Reproduction guide](docs/reproducing.md) · [Architecture](docs/architecture.md)
 

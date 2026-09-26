@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "optiver-volatility-research"
 version = "0.2.0"
-description = "Leakage-aware grouped-CV research for realized-volatility prediction"
+description = "Grouped-CV research for realized-volatility prediction"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

@@ -1,1 +1,1 @@
-"""Reusable components for the leakage-aware Optiver experiments."""
+"""Reusable components for Optiver realized-volatility experiments."""
