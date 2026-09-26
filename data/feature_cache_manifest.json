@@ -1,0 +1,12 @@
+{
+  "file_name": "features_phase2.parquet",
+  "schema_version": "optiver_feature_cache_v2",
+  "sha256": "003eb772ece89e51f5cc1f0a6e95d15e7df7dd57f4788c8e80a171ca4833a3d7",
+  "size_bytes": 200320277,
+  "rows": 428932,
+  "stocks": 112,
+  "time_ids": 3830,
+  "key_columns": ["stock_id", "time_id"],
+  "target_column": "target",
+  "note": "Canonical local cache used by the frozen development experiments; not redistributed."
+}

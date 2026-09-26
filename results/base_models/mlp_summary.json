@@ -1,0 +1,14 @@
+{
+  "group_bootstrap_ci_lower": 0.22353778934002136,
+  "group_bootstrap_ci_upper": 0.23192014845054693,
+  "mean_fold_rmspe": 0.22724077556604239,
+  "n_features": 44,
+  "n_folds": 5,
+  "n_oof_rows": 428932,
+  "n_rows": 428932,
+  "oof_fraction": 1.0,
+  "partial_run": false,
+  "pooled_oof_rmspe": 0.22734556590976202,
+  "resolved_device": "cpu",
+  "std_fold_rmspe": 0.0068971948373908526
+}

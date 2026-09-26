@@ -1,13 +1,29 @@
-# Data files
-*.parquet
-*.csv
+# Competition and generated data
+data/raw/
+data/processed/
 optiver-realized-volatility-prediction/
+*.parquet
+
+# Generated experiment outputs
+artifacts/
+notes/
 
 # Python
+.venv/
+.cache/
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .ipynb_checkpoints/
 
-# OS
+# Editors and operating systems
 .DS_Store
+.vscode/
+.idea/
+
+# Local reports or credentials
+*.local.*
+.env
+.env.*

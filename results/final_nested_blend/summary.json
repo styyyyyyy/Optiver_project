@@ -1,0 +1,76 @@
+{
+  "bootstrap_resamples": 5000,
+  "component_models": [
+    "lightgbm",
+    "mlp"
+  ],
+  "confidence": 0.95,
+  "group_bootstrap_ci_lower": 0.21292248967867017,
+  "group_bootstrap_ci_upper": 0.22240365121575606,
+  "method": "strict_nested_calibration_blend",
+  "n_folds": 5,
+  "n_models": 2,
+  "n_rows": 428932,
+  "pooled_oof_rmspe": 0.2171231602226673,
+  "provenance": {
+    "0": {
+      "calibration_groups_sha256": "81fc09e38182d1882354961859eef15eb1bf0c07650d61b19a3d201c008f4de6",
+      "fit_groups_sha256_by_model": {
+        "lightgbm": "271c4cb91e38fda19fea15455d2257522bd8b71f0c8606f4fd74d331239658b5",
+        "mlp": "271c4cb91e38fda19fea15455d2257522bd8b71f0c8606f4fd74d331239658b5"
+      },
+      "manifest_sha256": "ad9535bacf393be7f39d69415d99e8aed87131266ddc4c7352f850a86d047dad",
+      "outer_train_groups_sha256": "19ee349e92ddb33f1afd4669d08c613e9dbb3f0f1d3cbe5772bf082421b5cf64",
+      "outer_validation_groups_sha256": "1f68be203bf3de957aa8a11e2836c5b04dfd2036f415504a70cc15d67a37d8b7",
+      "prediction_file_sha256": "bf26871626806c9993060bee10de82edbaefca7632705200e8543cfaaaf99c54"
+    },
+    "1": {
+      "calibration_groups_sha256": "3f5ddbe4107ab452ed22e8d8dc86d5965b2176f22771ec1ebed2f3c7fff65547",
+      "fit_groups_sha256_by_model": {
+        "lightgbm": "7b09e274ed160c8f14e5435782d46dddec88cf5829567e0ccf310f6dfef07493",
+        "mlp": "7b09e274ed160c8f14e5435782d46dddec88cf5829567e0ccf310f6dfef07493"
+      },
+      "manifest_sha256": "361fbd0bdee671133ef57dd2cde4aa454e6f76d654ea673de83741422c9544e5",
+      "outer_train_groups_sha256": "11feb9e09b415368030cda3fb4b3e190b2ff8ed8df5ac8e1ecd786b50b00e141",
+      "outer_validation_groups_sha256": "c3ad6f96b2e2e41a7fc1efd9e754a2ecb325a65a2639df3453afc18aa50f263d",
+      "prediction_file_sha256": "832b9234ae0d4320f091ce26701ae7c00b2333bd0eaff08c13249330124e4e2a"
+    },
+    "2": {
+      "calibration_groups_sha256": "a36978b15b4d4023b0987a254df1364b8e5885d6b76909876f2c44ddfe4a0f7e",
+      "fit_groups_sha256_by_model": {
+        "lightgbm": "dfe83771e82be0f7bc403763a33f64100205218a90a48ebf7bb4ec9009a06a45",
+        "mlp": "dfe83771e82be0f7bc403763a33f64100205218a90a48ebf7bb4ec9009a06a45"
+      },
+      "manifest_sha256": "c21ad4be42f40be4148c61f39d5016b06fb8da03efee4ecbad5f8957a0bef0b8",
+      "outer_train_groups_sha256": "85bff43d00d9a30aa5191327c259ebd422ec5bf683eb2a90955744f0536fb502",
+      "outer_validation_groups_sha256": "981f88dfa09c803c171dd863a6be582742581aed3c1ad020d76827de7a0c71b2",
+      "prediction_file_sha256": "80b8c68b9c4c6a4297b77b63be83b8a73ea642cea822f5f967ae0694495b54d6"
+    },
+    "3": {
+      "calibration_groups_sha256": "a0f46c8da4beee7f14a3e5aafbfb4dd3f2d01b22b1cf7d2102369d437c0edc51",
+      "fit_groups_sha256_by_model": {
+        "lightgbm": "9390840c13bc2be27f1a9c36fbae241d8015b7d04db85504f11d1de79ef2a655",
+        "mlp": "9390840c13bc2be27f1a9c36fbae241d8015b7d04db85504f11d1de79ef2a655"
+      },
+      "manifest_sha256": "b77e50942571d44ab233e253d2ac89b720ed0f5ff54cf9731b7bbce7e1c0668b",
+      "outer_train_groups_sha256": "588e41ae0166e08d0a485b1323acc21ca2b577df21ccfa2a5fbd03b7b71a14f8",
+      "outer_validation_groups_sha256": "1bc68a1b88923dc05a54ab4de6739d70a2b6c816f9763c12cb61b21bc7f3c672",
+      "prediction_file_sha256": "dfbec7d14ffa0b519bad13954ab7d47a227b2b9f02f7d5f3f5f7c1770714d332"
+    },
+    "4": {
+      "calibration_groups_sha256": "2bc492dec7d4197c634432ee43ddd847b0a36f285dfd00e1324e9e63402070ae",
+      "fit_groups_sha256_by_model": {
+        "lightgbm": "a3ca62833afe968767cff5069bf8ba3a699728b15598f9cb7200d512b3bfd2b9",
+        "mlp": "a3ca62833afe968767cff5069bf8ba3a699728b15598f9cb7200d512b3bfd2b9"
+      },
+      "manifest_sha256": "2b339886f126b9df410422aec606383b78f708643a446fee54261404d76b7a14",
+      "outer_train_groups_sha256": "be96810d990ed7a8d9a5067f92e2eeaf7c7edce4d6014ff4c78ce09452b0696a",
+      "outer_validation_groups_sha256": "430602ec74a00feeb9dfec1b970988fcc55ac36c95a99ecd7a318f1fa25088de",
+      "prediction_file_sha256": "4480b5c5f3ab4c13c75e49b9b850baa42dca5dcf2624f17a88850cb70475f438"
+    }
+  },
+  "uncertainty_caveat": "Grouped bootstrap intervals are conditional on the fitted base models and fold-local calibration weights; they do not include model-training or calibration-selection uncertainty.",
+  "validation_claim": "strict_nested_outer_oof",
+  "weight_constraint": "nonnegative_sum_to_one",
+  "weight_fit": "fold-local inner calibration only"
+}

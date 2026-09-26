@@ -1,0 +1,10 @@
+{
+  "group_bootstrap_ci_lower": 0.21413562086050789,
+  "group_bootstrap_ci_upper": 0.22384350642964032,
+  "mean_fold_rmspe": 0.21818879941648867,
+  "n_features": 164,
+  "n_folds": 5,
+  "n_rows": 428932,
+  "pooled_oof_rmspe": 0.2183344211236179,
+  "std_fold_rmspe": 0.0079691288663616
+}
