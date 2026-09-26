@@ -14,6 +14,7 @@ parquets remain under the ignored `artifacts/` directory.
 - `final_nested_blend/fold_metrics.csv`: per-fold model scores.
 - `final_nested_blend/fold_weights.csv`: fold-local calibration weights and provenance hashes.
 - `final_nested_blend/paired_comparisons.csv`: paired RMSPE differences and intervals.
+- `linear_regression_comparison/`: historical Ridge stacking code, scores and figure.
 
 The report in [`docs/experiment_results.md`](../docs/experiment_results.md)
 explains which results are formal and which older results are exploratory.

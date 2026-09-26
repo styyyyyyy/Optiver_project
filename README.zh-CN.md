@@ -20,6 +20,11 @@ Strict nested ensemble 相对 LightGBM 改善约 `0.555%`，paired difference �
 这个结果仍是同一 development dataset 上的 grouped-CV estimate，不是独立测试集
 成绩。模型、特征与 ensemble 路径均受到该数据集的研究反馈。
 
+原始 Phase 2C 还包含一个 Ridge 线性回归 stacking 对比，历史 OOF RMSPE 为
+`0.236216`，没有优于两个基础模型。对应的[代码与精简结果](results/linear_regression_comparison/)
+已保留；由于它采用随机行级 KFold，只作为探索性负结果，不与上面的 strict nested
+结果直接比较。
+
 ## 从哪里开始
 
 - 想看结论：[`docs/experiment_results.md`](docs/experiment_results.md)

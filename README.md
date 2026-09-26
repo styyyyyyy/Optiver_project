@@ -32,6 +32,12 @@ feature choices were informed by the same development dataset. See
 [the limitations](docs/experiment_results.md#limitations) before quoting the
 score.
 
+The original Phase 2C experiment also tested a Ridge linear-regression stack.
+It scored `0.236216` on its historical OOF inputs and did not improve either
+component model. The [code and compact results](results/linear_regression_comparison/)
+are retained as an exploratory comparison; that row-level KFold experiment is
+not directly comparable with the strict nested headline result above.
+
 ## What changed from the original project
 
 - Reusable code lives in `src/optiver/`; experiment entry points live in
